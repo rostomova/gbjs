@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Homework lesson 1</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main>
+      <div class="hw">
+        <h1>Домашняя работа по JS</h1>
+        <h2>Урок 1</h2>
+        <ol>
+          <li>
+            <a href="temp.html">Конвертер температуры из &deg;C в &deg;F</a>
+          </li>
+          <li><a href="vars.html">Переменные</a></li>
+          <li>
+            Выражение 1000 + "108" будет равно:
+            <script>
+              var a = 1000;
+              var b = '108';
+              var c = a + b;
+              document.write('<b>' + c + '</b>');
+            </script>
+          </li>
+          <li>
+            Самостоятельно разобраться с атрибутами тега script (async и defer)
+          </li>
+          <ul>
+            <li>
+              Атрибут defer откладывает выполнение скрипта до тех пор, пока вся
+              страница не будет загружена полностью;
+            </li>
+            <li>
+              При наличии атрибута async браузер при возможности запускает
+              скрипт асинхронно. Это означает, что указанный в атрибуте src файл
+              будет выполняться без ожидания загрузки и отображения
+              веб-страницы. В то же время и страница не ожидает результата
+              выполнения скрипта, а продолжает загружаться как обычно.
+            </li>
+          </ul>
+        </ol>
+      </div>
+    </main>
+  </body>
+</html>
