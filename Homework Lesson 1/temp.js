@@ -1,4 +1,5 @@
-var tempCel = prompt('Введите температуру в цельсиях');
+'use strict';
+let tempCel = prompt('Введите температуру в цельсиях');
 
 if (tempCel == '') {
   alert('Увы, дружочек, ты ничего не ввёл!');

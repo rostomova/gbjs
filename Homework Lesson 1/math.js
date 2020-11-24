@@ -1,3 +1,5 @@
+'use strict';
+
 function plus(a, b) {
   return +a + +b;
 }
@@ -31,9 +33,9 @@ function mathOperation(arg1, arg2, operation) {
   }
 }
 
-var arg1 = +prompt('Введите первое число');
-var arg2 = +prompt('Введите второе число');
-var operation = prompt(
+let arg1 = +prompt('Введите первое число');
+let arg2 = +prompt('Введите второе число');
+let operation = prompt(
   'Введите одну из операций: Сложение, Вычитание, Умножение, Деление'
 );
 alert(
