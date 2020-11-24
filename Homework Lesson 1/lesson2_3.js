@@ -1,6 +1,8 @@
-var a = prompt('Введите число a');
-var b = prompt('Введите число b');
-var c;
+'use strict';
+
+let a = prompt('Введите число a');
+let b = prompt('Введите число b');
+let c;
 
 if (a == '' || b == '' || isNaN(parseInt(a)) || isNaN(parseInt(b))) {
   alert('Дружочек, что-то пошло не так. Введи циферки!');

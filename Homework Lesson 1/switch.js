@@ -1,5 +1,5 @@
-var a = +prompt('Введите число от 0 до 15');
-var res = '';
+let a = +prompt('Введите число от 0 до 15');
+let res = '';
 
 switch (a) {
   case 0:

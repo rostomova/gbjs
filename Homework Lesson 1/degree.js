@@ -1,3 +1,5 @@
+'use strict';
+
 function power(val, pow) {
   if (pow == 1) {
     return val;
@@ -6,8 +8,8 @@ function power(val, pow) {
   }
 }
 
-var dval = +prompt('Введите число');
-var dpow = +prompt('Введите степень');
+let dval = +prompt('Введите число');
+let dpow = +prompt('Введите степень');
 alert(
   'Число ' + dval + ' в степени ' + dpow + ' будет равно ' + power(dval, dpow)
 );
