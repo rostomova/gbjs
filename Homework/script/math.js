@@ -20,16 +20,12 @@ function mathOperation(arg1, arg2, operation) {
   switch (operation) {
     case 'Сложение':
       return plus(arg1, arg2);
-      break;
     case 'Вычитание':
       return minus(arg1, arg2);
-      break;
     case 'Умножение':
       return multi(arg1, arg2);
-      break;
     case 'Деление':
       return divi(arg1, arg2);
-      break;
   }
 }
 
