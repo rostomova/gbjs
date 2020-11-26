@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>3.4</title>
+  </head>
+  <body>
+    <script>
+      const products = [
+        {
+          id: 3,
+          price: 127,
+          photos: ['1.jpg', '2.jpg'],
+        },
+        {
+          id: 5,
+          price: 499,
+          photos: [],
+        },
+        {
+          id: 10,
+          price: 26,
+          photos: ['3.jpg'],
+        },
+        {
+          id: 8,
+          price: 78,
+        },
+      ];
+
+      function isPhoto(item) {
+        if (item.photos !== undefined && item.photos.length > 0) {
+          return item;
+        }
+      }
+
+      const productsWithPhoto = products.filter(isPhoto);
+      console.log('Массив с фото');
+      console.log(productsWithPhoto);
+
+      const sortProducts = products.sort(function (a, b) {
+        if (a.price > b.price) {
+          return 1;
+        }
+        if (a.price < b.price) {
+          return -1;
+        }
+        // a должно быть равным b
+        return 0;
+      });
+      console.log('Массив отсортированный по цене по возрастанию');
+      console.log(sortProducts);
+    </script>
+  </body>
+</html>
