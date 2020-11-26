@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>3.1</title>
+  </head>
+  <body>
+    <script>
+      for (let i = 0; i <= 10; i++) {
+        let comment;
+        if (i == 0) {
+          comment = ' - это ноль';
+        } else if (i % 2 == 1) {
+          comment = ' - это нечетное число';
+        } else if (i % 2 == 0) {
+          comment = ' - это четное число';
+        } else {
+          console.log('Что-то пошло не так');
+        }
+        console.log(i + comment);
+      }
+    </script>
+  </body>
+</html>
