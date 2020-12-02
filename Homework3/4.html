@@ -31,7 +31,9 @@
 
       function isPhoto(item) {
         if (item.photos !== undefined && item.photos.length > 0) {
-          return item;
+          return true;
+        } else {
+          return false;
         }
       }
 

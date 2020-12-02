@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>1</title>
+  </head>
+  <body>
+    <script>
+      'use strict';
+
+      function transformIntToObject(i) {
+        if (i < 0 || i > 999 || !Number.isInteger(i)) {
+          console.log(
+            'Введены неверные данные. Надо ввести целое число от 0 до 999.'
+          );
+          return {};
+        }
+
+        let h = Math.floor(i / 100);
+        let t = Math.floor((i - h * 100) / 10);
+        let u = i - h * 100 - t * 10;
+
+        let a = {
+          units: u,
+          tens: t,
+          hundreeds: h,
+        };
+
+        return a;
+      }
+
+      let a = +prompt('Введите целое число от 0 до 999');
+
+      console.log(transformIntToObject(a));
+    </script>
+  </body>
+</html>
