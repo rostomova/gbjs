@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>1.1-es6</title>
+  </head>
+  <body>
+    <script>
+      'use strict';
+
+      class Product {
+        constructor(name, price) {
+          this.name = name;
+          this.price = price;
+        }
+
+        make25PercentDiscount() {
+          this.price = this.price * 0.75;
+        }
+      }
+
+      const product1 = new Product('Морковь', 100);
+      product1.make25PercentDiscount();
+      console.log(product1);
+    </script>
+  </body>
+</html>
